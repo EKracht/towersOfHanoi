@@ -1,0 +1,51 @@
+html,body { 
+  height: 100%; 
+  margin: 3%; 
+  padding: 0; 
+  text-align: center;
+}
+
+.tower {
+  display: inline-block;
+  width: 25%;
+  height: 45%;
+  border: 2px solid red;
+  position: relative;
+}
+
+.stack {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.disc {
+  height: 100px;
+  border: 2px solid black;
+  vertical-align: bottom;
+}
+
+#disc1 {
+  width: 35%;
+  background-color: orange;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+#disc2 {
+  width: 55%;
+  background-color: green;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#disc3 {
+  width: 75%;
+  background-color: blue;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.selected {
+  border: 7px solid purple;
+}
