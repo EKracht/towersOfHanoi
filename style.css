@@ -9,8 +9,9 @@ html,body {
   display: inline-block;
   width: 25%;
   height: 45%;
-  border: 2px solid red;
+  border: 5px solid red;
   position: relative;
+  background-color: yellow;
 }
 
 .stack {
