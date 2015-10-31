@@ -1,9 +1,10 @@
 $(document).ready(init);
-
+ 
 function init(){
   console.log('ready!');
   $('.stack').on('click', selectDisc);
   $('.tower').on('click', moveDisc);
+  $('#discButton').on('click', makeDiscs);
 }
 
 function selectDisc(event){
@@ -40,11 +41,28 @@ function moveDisc(event){
  
 function winningCondition(){
   if ($('#stack3 div').length > 2) {
-    alert('YOU WIN!!!');
+    alert("YOU WIN!!!");
   }
 }
 
 
+// function makeDiscs(event){
+//   $(".disc").remove();
+//   $(".stackDiscs").remove();
+//   var input = $('#inputVal').val();
+//   for (var i = input; i > 0; i--){
+//     var $div = $('<div>').addClass('stackDiscs');
+//     var j = i;
+//     var k = j;
+//     var size = 20 + (k * 7) + "px";
+//     var margin = (k * 4) + "%";
+//     $stack1 = $('#stack1');
+//     $div.css("width", size);
+//     $div.css("margin-left", margin);
+//     $div.css("margin-right", margin);
+//     $stack1.prepend($div);
+//   }
+// }
 
 
 
